@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="https://juniqe.gitlab.io/devops/docs/images/favicon.png" type="image/png">
+
+    <title>System - Juniqe Cloud And Infrastruture Documentation</title>
+
+    
+    <link href="https://juniqe.gitlab.io/devops/docs/css/nucleus.css?1659456033" rel="stylesheet">
+    <link href="https://juniqe.gitlab.io/devops/docs/css/fontawesome-all.min.css?1659456033" rel="stylesheet">
+    <link href="https://juniqe.gitlab.io/devops/docs/css/hybrid.css?1659456033" rel="stylesheet">
+    <link href="https://juniqe.gitlab.io/devops/docs/css/featherlight.min.css?1659456033" rel="stylesheet">
+    <link href="https://juniqe.gitlab.io/devops/docs/css/perfect-scrollbar.min.css?1659456033" rel="stylesheet">
+    <link href="https://juniqe.gitlab.io/devops/docs/css/auto-complete.css?1659456033" rel="stylesheet">
+    <link href="https://juniqe.gitlab.io/devops/docs/css/atom-one-dark-reasonable.css?1659456033" rel="stylesheet">
+    <link href="https://juniqe.gitlab.io/devops/docs/css/theme.css?1659456033" rel="stylesheet">
+    <link href="https://juniqe.gitlab.io/devops/docs/css/tabs.css?1659456033" rel="stylesheet">
+    <link href="https://juniqe.gitlab.io/devops/docs/css/hugo-theme.css?1659456033" rel="stylesheet">
+    
+    <link href="https://juniqe.gitlab.io/devops/docs/css/foo.css?1659456033" rel="stylesheet"><link href="https://juniqe.gitlab.io/devops/docs/css/bar.css?1659456033" rel="stylesheet">
+
+    <script src="https://juniqe.gitlab.io/devops/docs/js/jquery-3.3.1.min.js?1659456033"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="https://juniqe.gitlab.io/devops/docs/infra/monitoring/system/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='https://juniqe.gitlab.io/devops/docs/'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    id="svg2"
+    version="1.1"
+    inkscape:version="0.48.4 r9939"
+    width="283.46375"
+    height="81.25"
+    xml:space="preserve"
+    sodipodi:docname="logo_tagline_black.pdf"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+    rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+    id="defs6"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16"><path
+         d="m 0,65 226.771,0 0,-65 L 0,0 0,65 z"
+         id="path18" /></clipPath></defs><sodipodi:namedview
+    pagecolor="#ffffff"
+    bordercolor="#666666"
+    borderopacity="1"
+    objecttolerance="10"
+    gridtolerance="10"
+    guidetolerance="10"
+    inkscape:pageopacity="0"
+    inkscape:pageshadow="2"
+    inkscape:window-width="640"
+    inkscape:window-height="480"
+    id="namedview4"
+    showgrid="false"
+    inkscape:zoom="1.3017538"
+    inkscape:cx="141.73187"
+    inkscape:cy="40.625"
+    inkscape:window-x="5051"
+    inkscape:window-y="179"
+    inkscape:window-maximized="0"
+    inkscape:current-layer="g10" /><g
+    id="g10"
+    inkscape:groupmode="layer"
+    inkscape:label="logo_tagline_black"
+    transform="matrix(1.25,0,0,-1.25,0,81.25)"><g
+       id="g12"><g
+         id="g14"
+         clip-path="url(#clipPath16)"><g
+           id="g20"
+           transform="translate(188.8158,64.7023)"><path
+             d="m 0,0 0,-40.735 27.118,0 0,6.81 -20.369,0 0,10.154 20.369,0 0,6.75 -20.369,0 0,10.212 20.369,0 0,6.809 L 0,0 z m -21.073,-10.799 c 2.662,-2.662 3.992,-5.852 3.992,-9.568 0,-3.718 -1.33,-6.925 -3.992,-9.626 -2.66,-2.622 -5.85,-3.932 -9.566,-3.932 -3.718,0 -6.926,1.31 -9.627,3.932 -2.621,2.701 -3.933,5.908 -3.933,9.626 0,3.716 1.312,6.906 3.933,9.568 2.701,2.66 5.909,3.99 9.627,3.99 3.716,0 6.906,-1.33 9.566,-3.99 m -23.945,4.813 c -3.993,-3.993 -5.988,-8.786 -5.988,-14.381 0,-5.635 1.995,-10.429 5.988,-14.381 3.951,-3.99 8.744,-5.987 14.379,-5.987 4.303,0 8.236,1.253 11.798,3.757 l 3.755,-3.757 4.874,4.813 -3.815,3.757 c 2.54,3.522 3.815,7.455 3.815,11.798 0,5.595 -2.016,10.388 -6.047,14.381 C -20.212,-1.995 -25.005,0 -30.639,0 -36.313,0 -41.106,-1.995 -45.018,-5.986 m -19.898,-34.749 6.749,0 0,40.735 -6.749,0 0,-40.735 z m -45.665,0.06 6.75,0 0,24.358 27.177,-24.418 0,0.117 0,-0.057 0,40.734 -6.809,0 0,-24.418 -27.118,24.418 0,-40.734 z M -119.266,0 l -6.81,0 0,-23.771 c 0,-2.78 -1.017,-5.166 -3.051,-7.161 -1.958,-1.996 -4.344,-2.993 -7.162,-2.993 -2.816,0 -5.222,0.997 -7.219,2.993 -1.957,1.956 -2.934,4.343 -2.934,7.161 l 0,23.771 -6.751,0 0,-23.771 c 0,-4.658 1.643,-8.668 4.931,-12.034 3.366,-3.286 7.356,-4.93 11.973,-4.93 4.657,0 8.667,1.644 12.033,4.93 3.326,3.326 4.99,7.338 4.99,12.034 l 0,23.771 z m -67.382,-36.802 c 2.661,-2.622 5.87,-3.933 9.626,-3.933 3.678,0 6.887,1.311 9.627,3.933 2.66,2.7 3.991,5.909 3.991,9.627 l 0,27.175 -6.868,0 0,-27.175 c 0,-1.88 -0.665,-3.484 -1.996,-4.815 -1.291,-1.29 -2.875,-1.935 -4.754,-1.935 -1.839,0 -3.425,0.664 -4.754,1.995 l -4.872,-4.872 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path22" /></g><g
+    id="g24"
+    transform="translate(9.4686,6.1445)"><path
+             d="M 0,0 -1.777,4.992 -3.553,0 0,0 z m -2.735,7.745 1.989,0 4.566,-12.506 -2.15,0 -1.03,2.931 -4.833,0 -1.029,-2.931 -2.079,0 4.566,12.506 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path26" /></g><g
+    id="g28"
+    transform="translate(23.7858,7.6187)"><path
+             d="m 0,0 c 1.599,0 2.487,0.853 2.487,2.15 l 0,0.036 c 0,1.403 -0.906,2.132 -2.452,2.132 l -2.256,0 L -2.221,0 0,0 z m -4.281,6.2 4.494,0 C 1.634,6.2 2.789,5.774 3.535,5.028 4.193,4.371 4.565,3.429 4.565,2.292 l 0,-0.071 c 0,-1.919 -1.066,-3.109 -2.575,-3.642 l 2.931,-4.814 -2.381,0 -2.647,4.406 c -0.035,-0.019 -0.089,-0.019 -0.124,-0.019 l -1.99,0 0,-4.387 -2.06,0 0,12.435 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path30" /></g><g
+    id="g32"
+    transform="translate(37.4272,11.9003)"><path
+             d="m 0,0 -3.269,0 0,1.919 8.598,0 0,-1.919 -3.268,0 0,-10.517 -2.061,0 L 0,0 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path34" /></g><path
+    d="m 47.392,3.746 2.274,0 0,-2.363 -2.274,0 0,2.363 z"
+    style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+    id="path36" /><g
+    id="g38"
+    transform="translate(65.5454,13.8189)"><path
+             d="m 0,0 7.834,0 0,-1.865 -5.791,0 0,-3.375 5.134,0 0,-1.866 -5.134,0 0,-3.464 5.88,0 0,-1.865 -7.923,0 L 0,0 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path40" /></g><g
+    id="g42"
+    transform="translate(79.1516,13.8189)"><path
+             d="M 0,0 2.238,0 5.294,-9.398 8.349,0 l 2.168,0 -4.299,-12.507 -1.901,0 L 0,0 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path44" /></g><g
+    id="g46"
+    transform="translate(95.8844,13.8189)"><path
+             d="m 0,0 7.834,0 0,-1.865 -5.791,0 0,-3.375 5.134,0 0,-1.866 -5.134,0 0,-3.464 5.88,0 0,-1.865 -7.923,0 L 0,0 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path48" /></g><g
+    id="g50"
+    transform="translate(114.6959,7.6187)"><path
+             d="m 0,0 c 1.598,0 2.487,0.853 2.487,2.15 l 0,0.036 c 0,1.403 -0.906,2.132 -2.452,2.132 l -2.256,0 L -2.221,0 0,0 z m -4.282,6.2 4.495,0 C 1.634,6.2 2.789,5.774 3.535,5.028 4.192,4.371 4.565,3.429 4.565,2.292 l 0,-0.071 C 4.565,0.302 3.5,-0.888 1.99,-1.421 l 2.931,-4.814 -2.381,0 -2.647,4.406 c -0.035,-0.019 -0.088,-0.019 -0.124,-0.019 l -1.99,0 0,-4.387 -2.061,0 0,12.435 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path52" /></g><g
+    id="g54"
+    transform="translate(128.6039,6.3397)"><path
+             d="m 0,0 -4.192,7.479 2.362,0 2.878,-5.382 2.895,5.382 2.292,0 -4.174,-7.461 0,-4.974 L 0,-4.956 0,0 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path56" /></g><g
+    id="g58"
+    transform="translate(139.7226,13.8189)"><path
+             d="m 0,0 2.185,0 2.434,-9.025 2.54,9.06 1.777,0 2.54,-9.06 2.434,9.025 2.131,0 -3.624,-12.507 -1.865,0 -2.54,8.777 -2.54,-8.777 -1.866,0 L 0,0 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path60" /></g><g
+    id="g62"
+    transform="translate(162.0687,13.8189)"><path
+             d="m 0,0 2.061,0 0,-5.223 4.885,0 0,5.223 2.06,0 0,-12.435 -2.06,0 0,5.294 -4.885,0 0,-5.294 -2.061,0 L 0,0 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path64" /></g><g
+    id="g66"
+    transform="translate(178.1975,13.8189)"><path
+             d="m 0,0 7.835,0 0,-1.865 -5.792,0 0,-3.375 5.134,0 0,-1.866 -5.134,0 0,-3.464 5.88,0 0,-1.865 -7.923,0 L 0,0 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path68" /></g><g
+    id="g70"
+    transform="translate(197.0086,7.6187)"><path
+             d="m 0,0 c 1.598,0 2.487,0.853 2.487,2.15 l 0,0.036 c 0,1.403 -0.907,2.132 -2.452,2.132 l -2.256,0 L -2.221,0 0,0 z m -4.281,6.2 4.494,0 C 1.634,6.2 2.789,5.774 3.535,5.028 4.193,4.371 4.565,3.429 4.565,2.292 l 0,-0.071 C 4.565,0.302 3.5,-0.888 1.99,-1.421 l 2.931,-4.814 -2.381,0 -2.647,4.406 c -0.035,-0.019 -0.088,-0.019 -0.124,-0.019 l -1.99,0 0,-4.387 -2.06,0 0,12.435 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path72" /></g><g
+    id="g74"
+    transform="translate(208.2514,13.8189)"><path
+             d="m 0,0 7.835,0 0,-1.865 -5.792,0 0,-3.375 5.134,0 0,-1.866 -5.134,0 0,-3.464 5.88,0 0,-1.865 -7.923,0 L 0,0 z"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path76" /></g><path
+    d="m 222.498,3.746 2.274,0 0,-2.363 -2.274,0 0,2.363 z"
+    style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+    id="path78" /></g></g></g>
+  </svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="https://juniqe.gitlab.io/devops/docs/js/lunr.min.js?1659456033"></script>
+<script type="text/javascript" src="https://juniqe.gitlab.io/devops/docs/js/auto-complete.js?1659456033"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/juniqe.gitlab.io\/devops\/docs";
+    
+</script>
+<script type="text/javascript" src="https://juniqe.gitlab.io/devops/docs/js/search.js?1659456033"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='https://juniqe.gitlab.io/devops/docs/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/" title="Infrastructure" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/">
+          Infrastructure
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/infrastructure-docs/" title="Infrastructure Documentation" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/">
+          <b>1. </b>Infrastructure Documentation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/infrastructure-docs/authentication/" title="Authentication" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/authentication/">
+          <b>1.1. </b>Authentication
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/infrastructure-docs/authentication/aws-sso/" title="AWS Credentials via SAML (SSO)" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/authentication/aws-sso/">
+        AWS Credentials via SAML (SSO)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/infrastructure-docs/authentication/mutiple-auth/" title="" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/authentication/mutiple-auth/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/infrastructure-docs/cloud/" title="Cloud Documentation" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/cloud/">
+          <b>1.2. </b>Cloud Documentation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/infrastructure-docs/cloud/cross-account-peering/" title="AWS private zone cross-account peering" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/cloud/cross-account-peering/">
+        AWS private zone cross-account peering
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/infrastructure-docs/external/" title="External" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/external/">
+          External
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/infrastructure-docs/external/hetzner/" title="Hetzner" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/external/hetzner/">
+        Hetzner
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/infrastructure-docs/maintenance/" title="Maintenance" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/maintenance/">
+          Maintenance
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/infrastructure-docs/maintenance/db/" title="Data Consistency / DB Maintenance" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/maintenance/db/">
+        Data Consistency / DB Maintenance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/infrastructure-docs/bi-infrastructure/" title="BI infrastructure" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/bi-infrastructure/">
+        BI infrastructure
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/infrastructure-docs/external-infrastructure/" title="External infrastructure" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/external-infrastructure/">
+        External infrastructure
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/infrastructure-docs/terraform/" title="Terraform usage" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/terraform/">
+        Terraform usage
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/onboarding/" title="Onboarding" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/">
+          <b>2. </b>Onboarding
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/onboarding/providers/" title="Providers" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/">
+          <b>2.1. </b>Providers
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/onboarding/providers/cognito/" title="Cognito" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/cognito/">
+        Cognito
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/onboarding/providers/google/" title="Google" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/google/">
+        Google
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/onboarding/providers/merchant-center-sso/" title="Merchant Center SSO" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/merchant-center-sso/">
+        Merchant Center SSO
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/onboarding/aws-sso-google-saml/" title="AWS SSO via Google SAML" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/aws-sso-google-saml/">
+        AWS SSO via Google SAML
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/onboarding/magento/" title="Magento Documentation" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/magento/">
+        Magento Documentation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/onboarding/mysql-users/" title="MySQL users onboarding" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/mysql-users/">
+        MySQL users onboarding
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/onboarding/vpn/" title="VPN onboarding" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/vpn/">
+        VPN onboarding
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/applications/" title="Applications" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/applications/">
+          <b>3. </b>Applications
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/applications/checkout/" title="Checkout app" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/applications/checkout/">
+        Checkout app
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/lambdas/" title="Lambda System" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/lambdas/">
+          <b>4. </b>Lambda System
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/lambdas/image-resize/" title="Image resize" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/lambdas/image-resize/">
+          Image resize
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/lambdas/image-resize/lambdas/" title="AWS Lambda for image rendering" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/lambdas/image-resize/lambdas/">
+        AWS Lambda for image rendering
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/howto/" title="Howto" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/howto/">
+          <b>5. </b>Howto
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/howto/pulumi/" title="Pulumi" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/howto/pulumi/">
+          Pulumi
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/howto/cloud/" title="Cloud" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/howto/cloud/">
+        Cloud
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/monitoring/" title="Monitoring" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/monitoring/">
+          <b>6. </b>Monitoring
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/monitoring/system/" title="System" class="dd-item active">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/monitoring/system/">
+        System
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/troubleshooting/" title="Troubleshooting" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/">
+          <b>7. </b>Troubleshooting
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/troubleshooting/performance/" title="Performance" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/performance/">
+        Performance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/troubleshooting/staging/" title="Staging" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/staging/">
+        Staging
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/infra/maintenance/" title="Maintenance" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://juniqe.gitlab.io/devops/docs/infra/maintenance/">
+          Maintenance
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/first-content/" title="Cloud &amp; Infrastructure" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/first-content/">
+        Cloud &amp; Infrastructure
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/infra/devops-entrypoints/" title="DevOps Entrypoints" class="dd-item ">
+        <a href="https://juniqe.gitlab.io/devops/docs/infra/devops-entrypoints/">
+        DevOps Entrypoints
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Create by <a href="https://gitlab.com/asdrubal2">Asdrubal</a> built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a
+        href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+
+
+
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   System
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#grafana">Grafana</a></li>
+    <li><a href="#promql---prometheus-query-language">PromQL - prometheus Query language.</a>
+      <ul>
+        <li><a href="#well-known-metrics-prefixes">well-known metrics prefixes</a></li>
+        <li><a href="#well-known-metrics-labels">well-known metrics labels</a></li>
+      </ul>
+    </li>
+    <li><a href="#sentry">Sentry</a></li>
+    <li><a href="#elk-aka-kibana">ELK aka Kibana</a></li>
+    <li><a href="#aws-cloudwatch">AWS cloudwatch</a></li>
+    <li><a href="#aws-xray">AWS Xray</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#alert-on-high-latency">Alert on High Latency</a>
+      <ul>
+        <li><a href="#examples">Examples:</a></li>
+        <li><a href="#how-to-set-threshold">How to set threshold:</a></li>
+      </ul>
+    </li>
+    <li><a href="#alert-on-number-of-errors">Alert on number of Errors</a>
+      <ul>
+        <li><a href="#examples-1">Examples:</a></li>
+        <li><a href="#how-to-set-threshold-1">How to set threshold</a></li>
+      </ul>
+    </li>
+    <li><a href="#alert-on-number-of-requests">Alert on number of requests</a>
+      <ul>
+        <li><a href="#examples-2">Examples:</a></li>
+        <li><a href="#how-to-set-threshold-2">How to set threshold</a></li>
+      </ul>
+    </li>
+    <li><a href="#alert-on-resource-saturation">Alert on resource saturation</a>
+      <ul>
+        <li><a href="#how-to-set-threshold-3">How to set threshold</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              System
+            </h1>
+          
+
+        
+
+
+<h1 id="tools">Tools</h1>
+<h2 id="grafana">Grafana</h2>
+<p>Grafana <a href="https://grafana.prod.juniqe.com/d/XjxcnIcMk/juniqe?orgId=1">https://grafana.prod.juniqe.com/d/XjxcnIcMk/juniqe?orgId=1</a></p>
+<p>grafana is main tool for dashboarding and alerting. Grafana uses prometheus, aws cloudwatch, aws X-ray, Kibana and other datasources as timeseries source  to draw panels and fire metircs.</p>
+<p>Main datasource is named &ldquo;Prometheus thanos&rdquo;. This datasource provides most of the metrics via PromQL api and combines prometheus metrics from juniqe-staging and juniqe-production.</p>
+<h2 id="promql---prometheus-query-language">PromQL - prometheus Query language.</h2>
+<p>We have to use PromQL to query prometheus timeseries metric storage, configure panels.</p>
+<p>Examples:</p>
+<p>Return all time series with the metric http_requests_total:</p>
+<p><code>http_requests_total</code></p>
+<p>Return all time series with the metric http_requests_total and the given job and handler labels:</p>
+<p><code>http_requests_total{job=&quot;apiserver&quot;, handler=&quot;/api/comments&quot;}</code></p>
+<p>Return a whole range of time (in this case 5 minutes) for the same vector, making it a range vector:</p>
+<p><code>http_requests_total{job=&quot;apiserver&quot;, handler=&quot;/api/comments&quot;}[5m]</code></p>
+<p>Note that an expression resulting in a range vector cannot be graphed directly, but viewed in the tabular (&ldquo;Console&rdquo;) view of the expression browser.</p>
+<p>Using regular expressions, you could select time series only for jobs whose name match a certain pattern, in this case, all jobs that end with server:</p>
+<p><code>http_requests_total{job=~&quot;.*server&quot;}</code></p>
+<p>All regular expressions in Prometheus use RE2 syntax.</p>
+<p>To select all HTTP status codes except 4xx ones, you could run:</p>
+<p><code>http_requests_total{status!~&quot;4..&quot;}</code></p>
+<p>Docs:</p>
+<ul>
+<li>Query Basics: <a href="https://prometheus.io/docs/prometheus/latest/querying/basics/">https://prometheus.io/docs/prometheus/latest/querying/basics/</a></li>
+<li>Cheat Sheet: <a href="https://promlabs.com/promql-cheat-sheet/">https://promlabs.com/promql-cheat-sheet/</a></li>
+<li>PromQL in Grafana:  <a href="https://grafana.com/docs/grafana/latest/datasources/prometheus/">https://grafana.com/docs/grafana/latest/datasources/prometheus/</a></li>
+</ul>
+<p>To get list available metrics, got to explore <a href="https://grafana.prod.juniqe.com/explore">https://grafana.prod.juniqe.com/explore</a>  and start typing roughly what you need. Grafana will suggest possible metrics.</p>
+<h3 id="well-known-metrics-prefixes">well-known metrics prefixes</h3>
+<ul>
+<li><code>aws_</code> - imported AWS cloudwatch metrics</li>
+<li><code>aws_lambda_</code> - aws lambda metrics</li>
+<li><code>aws_sqs_</code> - aws sqs metrics</li>
+<li><code>prometheus_</code> - prometheus internal metrics</li>
+<li><code>juniqe_</code> - Custom juniqe app metrics</li>
+<li><code>juniqe_shop_</code> - custom juniqe_shop metrics</li>
+<li><code>juniqe_ct_</code> - commercetools imported metric (funnel-monitoring lambda)</li>
+<li><code>http_</code> - http services counters, histograms (also used in juniqe apps)</li>
+<li><code>kube_</code> - k8s related metrics</li>
+<li><code>container_</code> - container related metrics</li>
+</ul>
+<h3 id="well-known-metrics-labels">well-known metrics labels</h3>
+<ul>
+<li><code>env</code> - juniqe Environment. Value can be juniqe-staging or juniqe-production</li>
+<li><code>namespace</code> - kubernetes namespace</li>
+<li><code>name</code> - exact ID of entity</li>
+<li><code>tag_Something</code> - imported from aws resource tag. It is preffered to use tags over IDs or names or ARNs</li>
+</ul>
+<h2 id="sentry">Sentry</h2>
+<p><a href="https://sentry.io/organizations/juniqe/projects/">https://sentry.io/organizations/juniqe/projects/</a></p>
+<p>Sentry is application error managing tools  with smart event merging capabilities. Every app has it&rsquo;s own project in sentry. Sentry usually only recieve <strong>error</strong> or higher level  events such as logged errors and exceptions.</p>
+<h2 id="elk-aka-kibana">ELK aka Kibana</h2>
+<p><a href="https://elk.intra.juniqe.com/">https://elk.intra.juniqe.com/</a>_plugin/kibana/app/kibana#/home?_g=()</p>
+<p>Kibana contains:</p>
+<ul>
+<li>mostly all logs from all applications(except lambdas)</li>
+<li>nginx access logs</li>
+</ul>
+<p>Kibana implements easy to use logs filtering and analyzing solution</p>
+<p>Same data is avaliable in Grafana from elasticsearch datasource</p>
+<h2 id="aws-cloudwatch">AWS cloudwatch</h2>
+<p>AWS monitoring solution. Provides many different products for metrics, logs and tracing</p>
+<p>Can be accessed via <a href="https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1">https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1</a></p>
+<p>Full lambda log, eks plane logs can  be found in cloudwatch logs</p>
+<p>Logs and metrics are available from AWS cloudwatch datasource. Metrics from datasource are lack of tags.</p>
+<p>Metrics are also available from prometheus datasource under <code>aws_</code> prefix.</p>
+<h2 id="aws-xray">AWS Xray</h2>
+<p>AWS application tracing solution. Mainly used in lambdas to trace performance.</p>
+<p>X-ray is available in grafana as datasource</p>
+<h1 id="morning-triage-workflow">Morning triage workflow</h1>
+<ul>
+<li>Triage new errors in grafana sentry and anomalies in grafana before standup</li>
+</ul>
+<ol>
+<li>Sentry: Open your project with filters Environment=juniqe-production time=24h (or time since last triaging) with sort by frequency and lookup for new err without assignee and issue</li>
+<li>Look at grafana dashboard if there are some possible anomaly</li>
+</ol>
+<ul>
+<li>Give team a small overview about new issues in your scope on standup
+<ol>
+<li>New errors or High frequent errors</li>
+<li>Alerts</li>
+<li>Anomlies</li>
+</ol>
+</li>
+<li>create tickets on issus if needed</li>
+<li>Solve issue if it&rsquo;s High freq, user facing error. possible high conversion decrease or notify person who can do that</li>
+<li>Apply hotfix and close issue</li>
+</ul>
+<h1 id="what-to-do-with-alert">What to do with alert</h1>
+<ul>
+<li>notify team that you are checking this problem</li>
+<li>Go to Grafana Panel Dashboard by link in Alert</li>
+<li>Check if this error creates problems for end users</li>
+<li>Check for other symptoms on Dashboard (RPS, Errors)</li>
+<li>Check logs in sentry, cloudwatch(available in grafana)</li>
+<li>Find root cause, create an issue</li>
+<li>Start working fix if this is urgent</li>
+</ul>
+<h1 id="application---person-responsibility-matrix">Application - person responsibility matrix</h1>
+<p>How to use this: put 1 for first responsibilty and 2 for second. Check checksums on the edges. For each project put dashboard link and sentry link</p>
+<p><a href="https://docs.google.com/spreadsheets/d/1EXsZjphL7Yc5_-t6IWTS05lNYJg_sJQMqSDkAXQ9nrw/edit#gid=0">https://docs.google.com/spreadsheets/d/1EXsZjphL7Yc5_-t6IWTS05lNYJg_sJQMqSDkAXQ9nrw/edit#gid=0</a></p>
+<h1 id="how-to-monitor">How to monitor</h1>
+<ol>
+<li>Ensure that application have sentry integrated, put Link to sentry into <em>Application - person responsibility matrix</em> doc and Readme.md of project</li>
+<li>Ensure that k8s service application has prometheus /metrics published (scala, nodejs apps) and PodMonitor k8s resouce is configured</li>
+<li>Ensure that lambda has X-ray integrated</li>
+<li>Ensure that lambda stack resources (lambda, sqs, api gw), have tag Name (they would not appear in prometheus otherwise)</li>
+<li>Create grafana dashboard. Examples
+<ul>
+<li>Lambda: <a href="https://grafana.prod.juniqe.com/d/i0_BHJ5Gz/cart-public-api-lambda?orgId=1">https://grafana.prod.juniqe.com/d/i0_BHJ5Gz/cart-public-api-lambda?orgId=1</a></li>
+<li>k8s service app: <a href="https://grafana.prod.juniqe.com/d/HlhbEnKMz/shop?orgId=1">https://grafana.prod.juniqe.com/d/HlhbEnKMz/shop?orgId=1</a></li>
+</ul>
+</li>
+</ol>
+<h1 id="which-alerts-to-create-and-what-monitor">Which alerts to create and what monitor</h1>
+<h2 id="alert-on-high-latency">Alert on High Latency</h2>
+<p>Mandatory alert</p>
+<p>Reflects resposivness of service.</p>
+<h3 id="examples">Examples:</h3>
+<ul>
+<li>Execution time of lambda</li>
+<li>http response time latency</li>
+</ul>
+<h3 id="how-to-set-threshold">How to set threshold:</h3>
+<p>500ms-1000ms - services involved in customer engagement (shop, category, pdp-app, etc), before conversion.
+1000ms-5000ms - services after conversion: checkout, returns</p>
+<p>Exact value should be set by historical p90 or p95 when service was normally functioning.</p>
+<p>Alternatively, better practice is to use advanced  APDEX score: <a href="https://prometheus.io/docs/practices/histograms/#apdex-score">https://prometheus.io/docs/practices/histograms/#apdex-score</a> <a href="https://en.wikipedia.org/wiki/Apdex">https://en.wikipedia.org/wiki/Apdex</a></p>
+<h2 id="alert-on-number-of-errors">Alert on number of Errors</h2>
+<p>Mandatory alert</p>
+<p>Amount of errors. This metric describes overall health of application</p>
+<h3 id="examples-1">Examples:</h3>
+<ul>
+<li>lambda not successful invocations</li>
+<li>5xx errors</li>
+<li>4xx errors</li>
+</ul>
+<h3 id="how-to-set-threshold-1">How to set threshold</h3>
+<p>Best case scenarion alert has to be set for <code>max(errors{5m}) &gt; 0</code>.
+If app throws errors as part of normal functioning (404 not found, intermediate errors), threshold should be set for historical p95.</p>
+<p>Alternatives:</p>
+<ul>
+<li>Calcualte percent of errors</li>
+<li>Include errors in APDEX score as Frustrated</li>
+</ul>
+<h2 id="alert-on-number-of-requests">Alert on number of requests</h2>
+<p>Not Mandatory alert.</p>
+<p>Amount of requests.</p>
+<h3 id="examples-2">Examples:</h3>
+<ul>
+<li>http requests per second(hour,minute) to application</li>
+<li>new messages in sqs per second</li>
+</ul>
+<h3 id="how-to-set-threshold-2">How to set threshold</h3>
+<p>historical maximum * 2</p>
+<h2 id="alert-on-resource-saturation">Alert on resource saturation</h2>
+<p>Not Mandatory alert</p>
+<p>Aim to monitor and track the usage of every resource the service relies upon. Some resources have hard limits you cannot exceed, like RAM, disk, or CPU quota allocated to your application. Other resources—like open file descriptors, active threads in any thread pools, waiting times in queues, or the volume of written logs—may not have a clear hard limit but still require management.</p>
+<p>Depending on the programming language in use, you should monitor additional resources:</p>
+<pre><code>In Java: The heap and metaspace size, and more specific metrics depending on what type of garbage collection you’re using
+In Go: The number of goroutines
+</code></pre>
+<p>The languages themselves provide varying support to track these resources.</p>
+<pre><code>When the resource has a hard limit
+When crossing a usage threshold causes performance degradation
+</code></pre>
+<p>You should have monitoring metrics to track all resources—even resources that the service manages well. These metrics are vital in capacity and resource planning.</p>
+<p>Examples:</p>
+<ul>
+<li>Lambda throttles</li>
+<li>Disk usage</li>
+</ul>
+<h3 id="how-to-set-threshold-3">How to set threshold</h3>
+<p>5-10% of total resource</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="https://juniqe.gitlab.io/devops/docs/infra/monitoring/" title="Monitoring"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/" title="Troubleshooting" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://juniqe.gitlab.io/devops/docs/js/clipboard.min.js?1659456033"></script>
+    <script src="https://juniqe.gitlab.io/devops/docs/js/perfect-scrollbar.min.js?1659456033"></script>
+    <script src="https://juniqe.gitlab.io/devops/docs/js/perfect-scrollbar.jquery.min.js?1659456033"></script>
+    <script src="https://juniqe.gitlab.io/devops/docs/js/jquery.sticky.js?1659456033"></script>
+    <script src="https://juniqe.gitlab.io/devops/docs/js/featherlight.min.js?1659456033"></script>
+    <script src="https://juniqe.gitlab.io/devops/docs/js/highlight.pack.js?1659456033"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://juniqe.gitlab.io/devops/docs/js/modernizr.custom-3.6.0.js?1659456033"></script>
+    <script src="https://juniqe.gitlab.io/devops/docs/js/learn.js?1659456033"></script>
+    <script src="https://juniqe.gitlab.io/devops/docs/js/hugo-learn.js?1659456033"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

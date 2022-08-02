@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image resize on Juniqe Cloud And Infrastruture Documentation</title>
+    <link>https://juniqe.gitlab.io/devops/docs/infra/lambdas/image-resize/</link>
+    <description>Recent content in Image resize on Juniqe Cloud And Infrastruture Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</managingEditor>
+    <webMaster>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</webMaster>
+    <lastBuildDate>Fri, 15 Jul 2022 13:30:00 +0200</lastBuildDate><atom:link href="https://juniqe.gitlab.io/devops/docs/infra/lambdas/image-resize/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Lambda for image rendering</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/lambdas/image-resize/lambdas/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/lambdas/image-resize/lambdas/</guid>
+      <description>images-s3-cdn (terraform/modules/lambda-image-rendering/images-s3-cdn)
+There are 3 main buckets involved in our rendering and resizing operations We use these DNS entries to serve images directly (through a Cloudfront distribution) from S3.
+rndr.juniqe.com rndr.juniqe-staging.juniqe.com rndr.juniqe-integration.juniqe.com juniqe-design-cloud This bucket is in the main account
+We store all high-res printing images in this bucket. Images are organized in verticals and by designer like
+juniqe-design-cloud/Wall Art/06 - Chase Kunz/6-1-101L-40x60.jpg juniqe-design-cloud/Wall Art/06 - Chase Kunz/6-1-101L-20x30.jpg juniqe-design-cloud/Living/Bed Linen/11 - Leah Flores/11-3-JB01-140x200.</description>
+    </item>
+    
+  </channel>
+</rss>

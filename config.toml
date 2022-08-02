@@ -1,0 +1,62 @@
+# baseurl = "https://pages.gitlab.io/hugo/"
+baseurl = "https://asdrubal.github.io/devops/docs"
+contentdir    = "content"
+layoutdir     = "layouts"
+publishdir    = "public"
+title = 'Documentation for DevOps Cloud And Infrastruture'
+canonifyurls  = true
+
+DefaultContentLanguage = "en"
+theme = "hugo-theme-learn"
+metaDataFormat = "yaml"
+pygmentsUseClasses = true
+pygmentCodeFences = true
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[Params]
+  subtitle = "Hugo Blog Template for GitLab Pages"
+#  logo = "img/avatar-icon.png"
+#  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = true
+  rss = true
+  comments = false
+#  themeVariant = "blue"
+#  themeVariant = "green"
+  showVisitedLinks = false
+  disableSearch = false
+  disableAssetsBusting = false
+  disableInlineCopyToClipBoard = true
+  disableShortcutsTitle = false
+  disableLandingPageButton = false
+  disableBreadcrumb = true
+  disableMermaid = false
+  customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
+  disableNextPrev = false
+  ordersectionsby = "weight"
+  custom_css = ["css/foo.css", "css/bar.css"]
+  titleSeparator = "-"
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+[[Params.bigimg]]
+  src = "img/triangle.jpg"
+  desc = "Triangle"
+[[Params.bigimg]]
+  src = "img/sphere.jpg"
+  desc = "Sphere"
+[[Params.bigimg]]
+  src = "img/hexagon.jpg"
+  desc = "Hexagon"
+
+[Author]
+  name = "Asdrubal Gonzalez Penton"
+  email = "agpenton@gmail.com"
+  googleplus = "+agpenton" # or xxxxxxxxxxxxxxxxxxxxx
+  gitlab = "asdrubal2"
+  github = "agpenton"
+
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]

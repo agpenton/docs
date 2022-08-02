@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monitoring on Juniqe Cloud And Infrastruture Documentation</title>
+    <link>https://juniqe.gitlab.io/devops/docs/infra/monitoring/</link>
+    <description>Recent content in Monitoring on Juniqe Cloud And Infrastruture Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</managingEditor>
+    <webMaster>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</webMaster>
+    <lastBuildDate>Sun, 17 Jul 2022 18:46:29 +0200</lastBuildDate><atom:link href="https://juniqe.gitlab.io/devops/docs/infra/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>System</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/monitoring/system/</link>
+      <pubDate>Sun, 17 Jul 2022 18:48:22 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/monitoring/system/</guid>
+      <description>Tools Grafana Grafana https://grafana.prod.juniqe.com/d/XjxcnIcMk/juniqe?orgId=1
+grafana is main tool for dashboarding and alerting. Grafana uses prometheus, aws cloudwatch, aws X-ray, Kibana and other datasources as timeseries source to draw panels and fire metircs.
+Main datasource is named &amp;ldquo;Prometheus thanos&amp;rdquo;. This datasource provides most of the metrics via PromQL api and combines prometheus metrics from juniqe-staging and juniqe-production.
+PromQL - prometheus Query language. We have to use PromQL to query prometheus timeseries metric storage, configure panels.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Onboarding on Juniqe Cloud And Infrastruture Documentation</title>
+    <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/</link>
+    <description>Recent content in Onboarding on Juniqe Cloud And Infrastruture Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</managingEditor>
+    <webMaster>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</webMaster>
+    <lastBuildDate>Fri, 15 Jul 2022 13:30:00 +0200</lastBuildDate><atom:link href="https://juniqe.gitlab.io/devops/docs/infra/onboarding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS SSO via Google SAML</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/aws-sso-google-saml/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/aws-sso-google-saml/</guid>
+      <description>Many information is available in Internet and detailed manual configuration described in AWS Blog At JUNIQE configuration made via TF for each account.
+AWS config The main AWS account configuration at the moment located at:
+https://bitbucket.org/juniqe/system-tools/src/master/terraform-2.0/providers/aws/global/main.tf?at=master&amp;amp;fileviewer=file-view-default With one resource description: # SAML Providerresource &amp;quot;aws_iam_saml_provider&amp;quot; &amp;quot;juniqe&amp;quot; { name = &amp;quot;GSuite&amp;quot; saml_metadata_document = &amp;quot;${file(&amp;quot;files/saml-metadata.xml&amp;quot;)}&amp;quot;} After this we create a roles which is mapping in Google Admin with custom schema.
+Google config In section of Apps &amp;gt; SAML Apps is always available the latest metadata for the Google IdP which is used in terraform.</description>
+    </item>
+    
+    <item>
+      <title>Magento Documentation</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/magento/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/magento/</guid>
+      <description>Magento back office Go to admin.juniqe.com Open system → permissions → users → add new user Fill the form, using gmail user as username. </description>
+    </item>
+    
+    <item>
+      <title>MySQL users onboarding</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/mysql-users/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/mysql-users/</guid>
+      <description>Read access to production mysql database [this is outdated, the new process is different] The form should be filled https://goo.gl/forms/lC5JMNm3GsogmOlW2
+Provide access via connecting to master and run commands; Choose a strong password.
+mysql -vv -h masterdb.juniqe-production. -u master -p mysql&amp;gt; CREATE USER &amp;#39;ro_firstname_lastname&amp;#39;@&amp;#39;172.31.13.38&amp;#39; IDENTIFIED BY &amp;#39;CHANGE_TO_SECURE_PASSWORD&amp;#39;; mysql&amp;gt; GRANT select,usage,show view on juniqe.* TO &amp;#39;ro_firstname_lastname&amp;#39;@&amp;#39;172.31.13.38&amp;#39; ; simple script to automate account creation Expand source:
+#!/bin/bash set -ue -o pipefail function q() { mysql -vv -h masterdb.</description>
+    </item>
+    
+    <item>
+      <title>VPN onboarding</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/vpn/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/vpn/</guid>
+      <description>Openvpn server This image is containing all data, including ca cert and server crt/key to run jumphost. aws s3 bucket juniqe-pki is saving state of easy rsa pki In order to run this image we need ec2 instance to run docker. Image for this instance is build by packer and contains script to update container image on schedule
+Generate new client pull latest juniqe-infra Authorize in account juniqe as admin Authorize in main account docker container repository Get the ca.</description>
+    </item>
+    
+  </channel>
+</rss>

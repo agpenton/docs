@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Documentation on Juniqe Cloud And Infrastruture Documentation</title>
+    <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/cloud/</link>
+    <description>Recent content in Cloud Documentation on Juniqe Cloud And Infrastruture Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</managingEditor>
+    <webMaster>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</webMaster>
+    <lastBuildDate>Fri, 15 Jul 2022 13:43:31 +0200</lastBuildDate><atom:link href="https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS private zone cross-account peering</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/cloud/cross-account-peering/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/cloud/cross-account-peering/</guid>
+      <description>HOWTO Requirements: AWS Account or Role access. aws-google-auth installed docker and docker-compose installed. Git installed. It&amp;rsquo;s possible to resolve internal zone records from one vpc to another in different account. For example: We have the account juniqe-production with zone juniqe-production (zone id ZONEIDJPR) and juniqe-main account with vpc vpc-7main; The goal is to make zone juniqe-production resolvable inside juniqe-main. To do so:
+Get the repository juniqe-infra for Gitlab: git clone https://gitlab.</description>
+    </item>
+    
+  </channel>
+</rss>

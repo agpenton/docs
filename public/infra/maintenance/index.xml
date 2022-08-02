@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maintenance on Juniqe Cloud And Infrastruture Documentation</title>
+    <link>https://juniqe.gitlab.io/devops/docs/infra/maintenance/</link>
+    <description>Recent content in Maintenance on Juniqe Cloud And Infrastruture Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</managingEditor>
+    <webMaster>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</webMaster>
+    <lastBuildDate>Sat, 16 Jul 2022 16:03:20 +0200</lastBuildDate><atom:link href="https://juniqe.gitlab.io/devops/docs/infra/maintenance/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

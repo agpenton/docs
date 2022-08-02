@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Landing Page on Juniqe Cloud And Infrastruture Documentation</title>
+    <link>https://juniqe.gitlab.io/devops/docs/</link>
+    <description>Recent content in Landing Page on Juniqe Cloud And Infrastruture Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</managingEditor>
+    <webMaster>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</webMaster>
+    <lastBuildDate>Fri, 15 Jul 2022 13:30:00 +0200</lastBuildDate><atom:link href="https://juniqe.gitlab.io/devops/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Performance</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/performance/</link>
+      <pubDate>Sun, 17 Jul 2022 18:53:30 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/performance/</guid>
+      <description>How to address issues performance issues Use this diagram to solve issues
+https://drive.google.com/file/d/1WaTRu9OIoUy-4a9XbtqVbpYQpUpsfGoP/view?usp=sharing
+How to check if not enough resources Memory: OOM events, memory usage is close to maximum, gc behaviour CPU: High cpu usage(more or close then maximum) Space: Service is non fuctional or throws errors on IO
+Check if we have more traffic then usually Open Traffic rate grafics retrospectively for 1h, 12h, 2 days, 7 days windows and search for anomalies</description>
+    </item>
+    
+    <item>
+      <title>System</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/monitoring/system/</link>
+      <pubDate>Sun, 17 Jul 2022 18:48:22 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/monitoring/system/</guid>
+      <description>Tools Grafana Grafana https://grafana.prod.juniqe.com/d/XjxcnIcMk/juniqe?orgId=1
+grafana is main tool for dashboarding and alerting. Grafana uses prometheus, aws cloudwatch, aws X-ray, Kibana and other datasources as timeseries source to draw panels and fire metircs.
+Main datasource is named &amp;ldquo;Prometheus thanos&amp;rdquo;. This datasource provides most of the metrics via PromQL api and combines prometheus metrics from juniqe-staging and juniqe-production.
+PromQL - prometheus Query language. We have to use PromQL to query prometheus timeseries metric storage, configure panels.</description>
+    </item>
+    
+    <item>
+      <title>Staging</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/staging/</link>
+      <pubDate>Sun, 17 Jul 2022 13:35:47 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/staging/</guid>
+      <description>Solving staging problems Master is deployed and it&amp;rsquo;s not working Check #dev-team channel if there announcement about someone working on staging. If none, say &amp;ldquo;Component X is not working on staging, feature X is not working for me. Master is deployed&amp;rdquo; Proceed to debug with &amp;ldquo;Known Issues&amp;rdquo; section Check sentry for errors in broken component Check kibana for errors in broken component (filter by app name) Check kubectl logs for errors in broken component (kubectl logs deploy/shop-app &amp;hellip; etc ) Check Grafana dashboard for component on staging (set env to juniqe-staging) CHeck last deployment job in gitlab for errors Check AWS health dashboard if there are ongoing incidents You deployed some branch, it does not work deploy master If deployment fails with errors &amp;ldquo;Waiting for pod default/runner-ldomxexz-project-13374321-concurrent-0wzvvr to be running, status is Pending ERROR: Job failed (system failure): prepare environment: timed out waiting for pod to start.</description>
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/howto/cloud/</link>
+      <pubDate>Sun, 17 Jul 2022 13:31:51 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/howto/cloud/</guid>
+      <description>Monitoring Using Staging Solving staging issues Kubernetes Tooling To work with AWS EKS Kubernetes you will need to install this tools:
+invoke command line utility to run our make-like tasks. This step is optional. Learn more
+docker https://docs.docker.com/install/
+aws cli https://aws.amazon.com/cli/
+aws-iam-authenticator https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html
+amazon-ecr-credential-helper https://github.com/awslabs/amazon-ecr-credential-helper
+aws-google-auth https://github.com/cevoaustralia/aws-google-auth
+kubectl https://kubernetes.io/docs/tasks/tools/install-kubectl/ skaffold https://skaffold.dev/docs/install/ kustomize https://github.com/kubernetes-sigs/kustomize kubeseal https://github.com/bitnami-labs/sealed-secrets/releases (Optional) Preparation Following steps are described for AWS juniqe-staging account
+AWS auth We need to authorize in AWS to</description>
+    </item>
+    
+    <item>
+      <title>Hetzner</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/external/hetzner/</link>
+      <pubDate>Sat, 16 Jul 2022 16:14:26 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/external/hetzner/</guid>
+      <description>About dev.juniqe.com is the Jenkins master server. It is also used as a sandbox for releases by developers. nexus.juniqe.com and aptly.juniqe.com/archive.juniqe.com are also located on this server. dev.juniqe.com Server has 6TB Hard Drive extension mounted as /data Server IP: 138.201.192.111 is whitelisted by many Security Group in AWS
+AWS default access Root user has configured AWS keys created by TF (system-tools/terraform-2.0/providers/aws/global/iam.tf) With access to the AWS ECR Service for the deployments</description>
+    </item>
+    
+    <item>
+      <title>Data Consistency / DB Maintenance</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/maintenance/db/</link>
+      <pubDate>Sat, 16 Jul 2022 16:05:38 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/maintenance/db/</guid>
+      <description>Extracting products without attributes. It might take up to 30m to complete. Separate database juniqe_data_inconsistency is used to hold results.
+CREATE TABLE catalog_product_entity_without_attributes; SELECT &amp;#34;name&amp;#34; AS &amp;#34;attribute&amp;#34;, cpe.entity_id AS &amp;#34;product_entity_id&amp;#34; FROM juniqe.catalog_product_entity cpe LEFT JOIN juniqe.catalog_product_entity_varchar cpev ON ( cpe.entity_id = cpev.entity_id ) WHERE ( cpev.attribute_id in (SELECT ea.attribute_id FROM juniqe.eav_attribute ea WHERE ( ea.attribute_code = &amp;#34;name&amp;#34; ) ) ) AND ( cpev.value_id IS NULL ) GROUP BY cpe.entity_id UNION SELECT &amp;#34;status&amp;#34; AS &amp;#34;attribute&amp;#34;, cpe.</description>
+    </item>
+    
+    <item>
+      <title>Checkout app</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/applications/checkout/</link>
+      <pubDate>Sat, 16 Jul 2022 13:26:06 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/applications/checkout/</guid>
+      <description>Checkout cart staging: https://www.staging.juniqe.com/cm/#/
+production: https://www.juniqe.de/cm/
+Logs: https://sentry.io/organizations/juniqe/issues/?project=5272619
+Run checkout tests Run in browser from localhost
+npm run test:local Run in headless Chrome from localhost
+npm run test:local:headless Run in browser against Staging
+test:juniqe-staging npx testcafe chrome qa/tests/functional.js --selector-timeout 50000 --assertion-timeout 20000 --page-load-timeout 15000 -e The preferred domain can be selected by --domain=de or domain=com
+local dev with shop integration Start local dev env with shop and nginx-frontend, for example cd ~/workspace/juniqe-infra/docker docker-compose up -d Start checkout app npm install npm start Open http://www.</description>
+    </item>
+    
+    <item>
+      <title>AWS Credentials via SAML (SSO)</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/authentication/aws-sso/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/authentication/aws-sso/</guid>
+      <description>If you want to have AWS API access for any script or terraform or even just AWS CLI outside of AWS you need to have a working AWS credential. Making and maintenance of such credentials could be a problem and big security issue. Luckily with login via Google IDP, we don&amp;rsquo;t have anymore permanent keys. The problem that engineers don&amp;rsquo;t have API access. As a solution - we can assumeRoleWith SAML to obtain the AWS STS token.</description>
+    </item>
+    
+    <item>
+      <title>AWS Lambda for image rendering</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/lambdas/image-resize/lambdas/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/lambdas/image-resize/lambdas/</guid>
+      <description>images-s3-cdn (terraform/modules/lambda-image-rendering/images-s3-cdn)
+There are 3 main buckets involved in our rendering and resizing operations We use these DNS entries to serve images directly (through a Cloudfront distribution) from S3.
+rndr.juniqe.com rndr.juniqe-staging.juniqe.com rndr.juniqe-integration.juniqe.com juniqe-design-cloud This bucket is in the main account
+We store all high-res printing images in this bucket. Images are organized in verticals and by designer like
+juniqe-design-cloud/Wall Art/06 - Chase Kunz/6-1-101L-40x60.jpg juniqe-design-cloud/Wall Art/06 - Chase Kunz/6-1-101L-20x30.jpg juniqe-design-cloud/Living/Bed Linen/11 - Leah Flores/11-3-JB01-140x200.</description>
+    </item>
+    
+    <item>
+      <title>AWS private zone cross-account peering</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/cloud/cross-account-peering/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/cloud/cross-account-peering/</guid>
+      <description>HOWTO Requirements: AWS Account or Role access. aws-google-auth installed docker and docker-compose installed. Git installed. It&amp;rsquo;s possible to resolve internal zone records from one vpc to another in different account. For example: We have the account juniqe-production with zone juniqe-production (zone id ZONEIDJPR) and juniqe-main account with vpc vpc-7main; The goal is to make zone juniqe-production resolvable inside juniqe-main. To do so:
+Get the repository juniqe-infra for Gitlab: git clone https://gitlab.</description>
+    </item>
+    
+    <item>
+      <title>AWS SSO via Google SAML</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/aws-sso-google-saml/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/aws-sso-google-saml/</guid>
+      <description>Many information is available in Internet and detailed manual configuration described in AWS Blog At JUNIQE configuration made via TF for each account.
+AWS config The main AWS account configuration at the moment located at:
+https://bitbucket.org/juniqe/system-tools/src/master/terraform-2.0/providers/aws/global/main.tf?at=master&amp;amp;fileviewer=file-view-default With one resource description: # SAML Providerresource &amp;quot;aws_iam_saml_provider&amp;quot; &amp;quot;juniqe&amp;quot; { name = &amp;quot;GSuite&amp;quot; saml_metadata_document = &amp;quot;${file(&amp;quot;files/saml-metadata.xml&amp;quot;)}&amp;quot;} After this we create a roles which is mapping in Google Admin with custom schema.
+Google config In section of Apps &amp;gt; SAML Apps is always available the latest metadata for the Google IdP which is used in terraform.</description>
+    </item>
+    
+    <item>
+      <title>BI infrastructure</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/bi-infrastructure/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/bi-infrastructure/</guid>
+      <description> Matilion: https://gitlab.com/juniqe/infra/cloud/-/tree/master/aws/bi Additional: https://gitlab.com/juniqe/juniqe-infra/-/tree/master/terraform/envs/datavirtuality Snowplow: The separate account managed by the snowplow itself </description>
+    </item>
+    
+    <item>
+      <title>Cloud &amp; Infrastructure</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/first-content/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/first-content/</guid>
+      <description>Environments We run our servers in different environments (separate AWS accounts). These are:
+juniqe-production juniqe-staging juniqe-integration (currently not in use) Deployments We follow the following motos for all our deployments:
+Application infrastructure should be managed and deployed as part of the application code. All deployments should be implemented with CI/CD in mind. FreatureBranching should be automated and be part of the CI/CD. Any change to our applications is currently going through the following steps:</description>
+    </item>
+    
+    <item>
+      <title>Cognito</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/cognito/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/cognito/</guid>
+      <description> Cognito: no actions are needed </description>
+    </item>
+    
+    <item>
+      <title>DevOps Entrypoints</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/devops-entrypoints/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/devops-entrypoints/</guid>
+      <description>New accounts [on/off] boarding VPN management: Production VPN MySQL users: SSO: Providers Cognito - no actions are needed. Commercetools MC SSO: CommerceTools SSO. Google Groups. On GSuite new Engineering accounts should be added to these groups:
+All Engineering For DevOps also the group: DevOps GitLab and Sentry: access should be granted to the projects
+Infrastructure management New infrastructure on K8s is documented in: cloud repository
+Everything around K8s DNS management for the cluster K8s IAM ALB for K8s BI infrastructure The old part of the infrastructure is in: juniqe-infra</description>
+    </item>
+    
+    <item>
+      <title>External infrastructure</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/external-infrastructure/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/external-infrastructure/</guid>
+      <description>Hetzner hetzner
+External FTP servers:
+OPS FTP services: https://app.clickup.com/4580628/v/dc/4bt8m-736/4bt8m-47921 Marketing: https://app.clickup.com/4580628/v/dc/4bt8m-736/4bt8m-6861 </description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/google/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/google/</guid>
+      <description>Google Groups: On GSuite new Engineering accounts should be added to the groups: All and Engineering For DevOps also the group DevOps
+GitLab and Sentry: access should be granted to the projects</description>
+    </item>
+    
+    <item>
+      <title>Magento Documentation</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/magento/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/magento/</guid>
+      <description>Magento back office Go to admin.juniqe.com Open system → permissions → users → add new user Fill the form, using gmail user as username. </description>
+    </item>
+    
+    <item>
+      <title>Merchant Center SSO</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/merchant-center-sso/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/providers/merchant-center-sso/</guid>
+      <description>We do use SSO with Juniqe Google Apps user database. Auth0 is used as OIDC provider.
+https://docs.commercetools.com/merchant-center/single-sign-on-beta
+Usage Open https://mc.commercetools.com/login/sso Enter organisation name &amp;ldquo;juniqe&amp;rdquo; In Auth0 opening dialog, click &amp;ldquo;Continue with JuniqeGoogleApps&amp;rdquo; In Sign in with Google, sign in into juniqe google account(gmail) You are in! new users have no privilgies, Administrator supposed to invite them to proper groups after first login
+Setup for new CT Org Setup G Suite Enterprise connection in Auth0 (follow Auth0 instructions).</description>
+    </item>
+    
+    <item>
+      <title>MySQL users onboarding</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/mysql-users/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/mysql-users/</guid>
+      <description>Read access to production mysql database [this is outdated, the new process is different] The form should be filled https://goo.gl/forms/lC5JMNm3GsogmOlW2
+Provide access via connecting to master and run commands; Choose a strong password.
+mysql -vv -h masterdb.juniqe-production. -u master -p mysql&amp;gt; CREATE USER &amp;#39;ro_firstname_lastname&amp;#39;@&amp;#39;172.31.13.38&amp;#39; IDENTIFIED BY &amp;#39;CHANGE_TO_SECURE_PASSWORD&amp;#39;; mysql&amp;gt; GRANT select,usage,show view on juniqe.* TO &amp;#39;ro_firstname_lastname&amp;#39;@&amp;#39;172.31.13.38&amp;#39; ; simple script to automate account creation Expand source:
+#!/bin/bash set -ue -o pipefail function q() { mysql -vv -h masterdb.</description>
+    </item>
+    
+    <item>
+      <title>Terraform usage</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/terraform/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/terraform/</guid>
+      <description>Before you start Make sure you have done this how-to</description>
+    </item>
+    
+    <item>
+      <title>VPN onboarding</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/onboarding/vpn/</link>
+      <pubDate>Fri, 15 Jul 2022 13:43:31 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/onboarding/vpn/</guid>
+      <description>Openvpn server This image is containing all data, including ca cert and server crt/key to run jumphost. aws s3 bucket juniqe-pki is saving state of easy rsa pki In order to run this image we need ec2 instance to run docker. Image for this instance is build by packer and contains script to update container image on schedule
+Generate new client pull latest juniqe-infra Authorize in account juniqe as admin Authorize in main account docker container repository Get the ca.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/authentication/mutiple-auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/infrastructure-docs/authentication/mutiple-auth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://juniqe.gitlab.io/devops/docs/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/posts/</guid>
+      <description>Engineering index</description>
+    </item>
+    
+  </channel>
+</rss>

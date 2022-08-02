@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshooting on Juniqe Cloud And Infrastruture Documentation</title>
+    <link>https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/</link>
+    <description>Recent content in Troubleshooting on Juniqe Cloud And Infrastruture Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</managingEditor>
+    <webMaster>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</webMaster>
+    <lastBuildDate>Sun, 17 Jul 2022 13:35:17 +0200</lastBuildDate><atom:link href="https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Performance</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/performance/</link>
+      <pubDate>Sun, 17 Jul 2022 18:53:30 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/performance/</guid>
+      <description>How to address issues performance issues Use this diagram to solve issues
+https://drive.google.com/file/d/1WaTRu9OIoUy-4a9XbtqVbpYQpUpsfGoP/view?usp=sharing
+How to check if not enough resources Memory: OOM events, memory usage is close to maximum, gc behaviour CPU: High cpu usage(more or close then maximum) Space: Service is non fuctional or throws errors on IO
+Check if we have more traffic then usually Open Traffic rate grafics retrospectively for 1h, 12h, 2 days, 7 days windows and search for anomalies</description>
+    </item>
+    
+    <item>
+      <title>Staging</title>
+      <link>https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/staging/</link>
+      <pubDate>Sun, 17 Jul 2022 13:35:47 +0200</pubDate>
+      <author>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</author>
+      <guid>https://juniqe.gitlab.io/devops/docs/infra/troubleshooting/staging/</guid>
+      <description>Solving staging problems Master is deployed and it&amp;rsquo;s not working Check #dev-team channel if there announcement about someone working on staging. If none, say &amp;ldquo;Component X is not working on staging, feature X is not working for me. Master is deployed&amp;rdquo; Proceed to debug with &amp;ldquo;Known Issues&amp;rdquo; section Check sentry for errors in broken component Check kibana for errors in broken component (filter by app name) Check kubectl logs for errors in broken component (kubectl logs deploy/shop-app &amp;hellip; etc ) Check Grafana dashboard for component on staging (set env to juniqe-staging) CHeck last deployment job in gitlab for errors Check AWS health dashboard if there are ongoing incidents You deployed some branch, it does not work deploy master If deployment fails with errors &amp;ldquo;Waiting for pod default/runner-ldomxexz-project-13374321-concurrent-0wzvvr to be running, status is Pending ERROR: Job failed (system failure): prepare environment: timed out waiting for pod to start.</description>
+    </item>
+    
+  </channel>
+</rss>
