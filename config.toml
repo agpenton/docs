@@ -1,12 +1,14 @@
 # baseurl = "https://pages.gitlab.io/hugo/"
-baseurl = "https://asdrubal.github.io/devops/docs"
+baseurl = "https://asdrubal.github.io/"
+DefaultContentLanguage = "en"
+languageCode = "en-US"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
 title = 'Documentation for DevOps Cloud And Infrastruture'
 canonifyurls  = true
 
-DefaultContentLanguage = "en"
+
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
@@ -16,14 +18,13 @@ pygmentCodeFences = true
 
 [Params]
   subtitle = "Hugo Blog Template for GitLab Pages"
-#  logo = "img/avatar-icon.png"
-#  favicon = "img/favicon.ico"
+  # logo = "images/avatar-icon.png"
+  favicon = "images/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = true
   rss = true
   comments = false
-#  themeVariant = "blue"
-#  themeVariant = "green"
+  themeVariant = "blue"
   showVisitedLinks = false
   disableSearch = false
   disableAssetsBusting = false

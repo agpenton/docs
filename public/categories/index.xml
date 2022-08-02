@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Juniqe Cloud And Infrastruture Documentation</title>
-    <link>https://juniqe.gitlab.io/devops/docs/categories/</link>
-    <description>Recent content in Categories on Juniqe Cloud And Infrastruture Documentation</description>
+    <title>Categories on Documentation for DevOps Cloud And Infrastruture</title>
+    <link>https://asdrubal.github.io/devops/docs/categories/</link>
+    <description>Recent content in Categories on Documentation for DevOps Cloud And Infrastruture</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</managingEditor>
-    <webMaster>asdrubal@juniqe.com (Asdrubal Gonzalez Penton)</webMaster><atom:link href="https://juniqe.gitlab.io/devops/docs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>agpenton@gmail.com (Asdrubal Gonzalez Penton)</managingEditor>
+    <webMaster>agpenton@gmail.com (Asdrubal Gonzalez Penton)</webMaster><atom:link href="https://asdrubal.github.io/devops/docs/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

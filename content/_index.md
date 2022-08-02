@@ -1,18 +1,13 @@
 +++
-title = "Landing Page"
-date = 2022-07-15T13:30:00+02:00
-weight = 1
-chapter = false
+title = ""
+date = 2022-08-02T18:27:10+02:00
+weight = 5
+chapter = true
+pre = "<b>1. </b>"
 +++
-## DevOps Documentation
 
-This Website will host the documetation used for the DevOps process for the Juniqe Infrastructure.
+### Chapter 1
 
-The Content of this website is:
+# Some Chapter title
 
-1. [Infrastructure](/basics)
-   - [DevOps Entrypoints](/basics/devops-entrypoints)
-   - [Cloud & Infrastructure Descripttion](/basics/first-content/)
-   - [Infrastructure Documentation](/basics/infrastructure-docs/)
-
-
+Lorem Ipsum.
