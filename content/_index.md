@@ -8,6 +8,6 @@ pre = "<b>1. </b>"
 
 ### Chapter 1
 
-# Documentation for all my process.
+# Documentation.
 
 This is a site where i will store all my docs and procedures that i do in my daily life as a DevOps Engineer.
