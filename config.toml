@@ -5,11 +5,14 @@ languageCode = "en-US"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = 'Documentation for DevOps Cloud And Infrastruture'
+title = 'My Awesome Documentation for DevOps'
+Subtitle = 'Hugo is Absurdly Fast!'
 canonifyurls  = true
+cleanDestinationDir = true
 
 
 theme = "hugo-theme-learn"
+#theme = "my-doks-site"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
