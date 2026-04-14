@@ -17,3 +17,16 @@ seo:
 ## Tools and Articles
 
 This page will give some DevOps articles and tools to use.
+
+Just a placeholder.
+
+```go
+// Go code with syntax highlighting.
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```

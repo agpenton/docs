@@ -13,5 +13,9 @@ seo:
   canonical: ""
   noindex: false
 ---
+---
+sidebar:
+collapsed: true
+---
 
 This section covers DevOps tools, practices, and articles to help you navigate the modern DevOps landscape.
