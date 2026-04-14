@@ -1,5 +1,5 @@
 title = "My Awesome DevOps Documentation"
-baseurl = "http://localhost/"
+baseurl = "docs/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
