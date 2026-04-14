@@ -1,9 +1,12 @@
-<!-- Insert scripts NEEDED by stylesheets here -->
-{{- if eq site.Params.doks.colorMode "auto" }} {{- partial "footer/esbuild"
-(dict "src" "js/color-mode.js" "transpile" false) }} {{- end }} {{- if and
-(site.Params.doks.alert) (site.Params.doks.alertDismissable) }} {{- partial
-"footer/esbuild" (dict "src" "js/dismissable-alert.js" "transpile" false) }} {{-
-end }} {{- if .Param "math" }} {{- $mathEngine := .Param "mathEngine" | default
-"KaTeX" }} {{- if eq $mathEngine "MathJax" }} {{ partialCached
-"main/mathjax.html" . }} {{- else }} {{ partialCached "main/katex.html" . }} {{-
-end }} {{- end }}
+{{- if eq site.Params.doks.colorMode "auto" -}}
+{{- $src := resources.Get "js/color-mode.js" -}}
+{{- if not $src -}}{{- errorf "No js resource found at /assets/js/color-mode.js" -}}{{- end -}}
+{{- $params := (dict "env" hugo.Environment) -}}
+{{- $js := "" -}}
+{{- if eq hugo.Environment "development" -}}
+{{- $js = $src | js.Build (dict "sourceMap" "inline" "target" "es2015" "params" $params) | fingerprint -}}
+{{- else -}}
+{{- $js = $src | js.Build (dict "target" "es2015" "minify" "true" "params" $params) | fingerprint -}}
+{{- end -}}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{- end }}
