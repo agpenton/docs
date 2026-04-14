@@ -1,5 +1,5 @@
 title = "My Awesome DevOps Documentation"
-baseurl = "docs/"
+baseurl = "https://agpenton.github.io/docs/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
