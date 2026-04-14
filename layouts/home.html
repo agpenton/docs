@@ -1,26 +1,17 @@
 {{ define "main" }}
-<section class="section container-fluid hero-section">
+<section class="section container-fluid mt-n3 pb-3">
   <div class="row justify-content-center">
-    <div class="col-lg-8 text-center hero-content">
-      <p class="hero-eyebrow">
-        {{ .Params.eyebrow | default "Personal Knowledge Base" }}
-      </p>
-      <h1 class="hero-title">{{ .Title }}</h1>
-      <p class="lead hero-lead">{{ .Params.lead | safeHTML }}</p>
-      <div class="hero-actions">
-        <a
-          class="btn btn-primary btn-cta rounded-pill btn-lg me-3"
-          href="/docs/"
-          role="button"
-          >Browse the Docs</a
-        >
-        <a
-          class="btn btn-outline-secondary rounded-pill btn-lg"
-          href="/docs/devops/"
-          role="button"
-          >DevOps Topics</a
-        >
-      </div>
+    <div class="col-lg-12 text-center">
+      <h1>{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a
+        class="btn btn-primary btn-cta rounded-pill btn-lg my-3"
+        href="/docs/"
+        role="button"
+        >Get Started</a
+      >
     </div>
   </div>
 </section>
@@ -31,71 +22,35 @@
 </div>
 {{ end -}}
 
-<!-- Feature cards -->
 <section class="section section-md section-features">
   <div class="container">
-    <div class="row justify-content-center text-center mb-4">
-      <div class="col-lg-7">
-        <h2 class="section-heading">
-          {{ .Params.featuresTitle | default "What you will find here" }}
-        </h2>
-        <p class="text-body-secondary">
-          {{ .Params.featuresSubtitle | default "Practical knowledge distilled
-          from real-world experience." }}
-        </p>
-      </div>
-    </div>
-    <div class="row justify-content-center g-4">
+    <div class="row justify-content-center text-center">
       {{ range .Params.features }}
       <div class="col-lg-5">
-        <div class="feature-card h-100">
-          <div class="feature-icon mb-3">{{ .icon | safeHTML }}</div>
-          <h3 class="h5 feature-title">{{ .title }}</h3>
-          <p class="text-body-secondary mb-0">{{ .description }}</p>
-        </div>
+        <h2 class="h4">{{ .title }}</h2>
+        <p>{{ .description }}</p>
       </div>
       {{ end }}
     </div>
   </div>
 </section>
 
-<!-- Stats / highlights strip -->
-<section class="section section-sm stats-section">
-  <div class="container">
-    <div class="row justify-content-center text-center g-4">
-      {{ range .Params.stats }}
-      <div class="col-6 col-md-3">
-        <p class="stat-number">{{ .value }}</p>
-        <p class="stat-label text-body-secondary mb-0">{{ .label }}</p>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }} {{ define "sidebar-footer" }} {{ if site.Params.doks.sectionFooter -}}
-<section class="section section-md container-fluid cta-footer">
+<section class="section section-credits container">
   <div class="row justify-content-center text-center">
-    <div class="col-lg-7">
-      <h2 class="mt-2">Ready to level up your DevOps game?</h2>
-      <p class="text-body-secondary">
-        Dive into guides, tips, and real-world examples crafted from hands-on
-        experience.
+    <div class="col-lg-6">
+      <p class="text-muted">
+        <small
+          >{{ .Params.creditsText | default "A personal knowledge base for
+          DevOps engineering." }}</small
+        >
       </p>
-      <a
-        class="btn btn-primary rounded-pill px-4 my-2 me-2"
-        href="/docs/"
-        role="button"
-        >Get Started</a
-      >
-      <a
-        class="btn btn-outline-secondary rounded-pill px-4 my-2"
-        href="https://github.com/agpenton"
-        role="button"
-        target="_blank"
-        rel="noopener"
-        >View on GitHub</a
-      >
+      <p>
+        {{ .Params.creditsDescription | default "Built with Hugo and the Doks
+        theme. Infrastructure as code, CI/CD, cloud, and SRE — all in one
+        place." }}
+      </p>
+      <a href="https://github.com/agpenton">View on GitHub</a>
     </div>
   </div>
 </section>
-{{ end -}} {{ end }}
+{{ end }} {{ define "sidebar-footer" }} {{ end }}

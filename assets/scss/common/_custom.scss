@@ -1,125 +1,13 @@
 // Custom styles
 
 // ─── Hero Section ────────────────────────────────────────────────────────────
-.hero-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-
-  @media (min-width: 992px) {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
+.section.mt-n3 {
+  padding-bottom: 1rem;
 }
 
-.hero-content {
-  max-width: 760px;
-  margin-inline: auto;
-}
-
-.hero-eyebrow {
-  display: inline-block;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--bs-primary);
-  margin-bottom: 0.75rem;
-}
-
-.hero-title {
-  font-size: clamp(2rem, 5vw, 3.25rem);
-  font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.25rem;
-}
-
-.hero-lead {
-  font-size: 1.15rem;
-  color: var(--bs-secondary-color);
-  max-width: 600px;
-  margin-inline: auto;
-  margin-bottom: 2rem;
-  line-height: 1.7;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  justify-content: center;
-}
-
-// ─── Feature Cards ────────────────────────────────────────────────────────────
-.section-heading {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.feature-card {
-  padding: 1.75rem;
-  border-radius: 1rem;
-  border: 1px solid var(--bs-border-color);
-  background-color: var(--bs-body-bg);
-  transition:
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
-
-  &:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
-  }
-
-  [data-bs-theme="dark"] & {
-    background-color: var(--bs-tertiary-bg);
-    &:hover {
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    }
-  }
-}
-
-.feature-icon {
-  color: var(--bs-primary);
-  line-height: 1;
-}
-
-.feature-title {
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-// ─── Stats Strip ──────────────────────────────────────────────────────────────
-.stats-section {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+// ─── Credits Section ──────────────────────────────────────────────────────────
+.section-credits {
   border-top: 1px solid var(--bs-border-color);
-  border-bottom: 1px solid var(--bs-border-color);
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--bs-primary);
-  margin-bottom: 0.25rem;
-  letter-spacing: -0.02em;
-}
-
-.stat-label {
-  font-size: 0.875rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-// ─── CTA Footer ───────────────────────────────────────────────────────────────
-.cta-footer {
-  background-color: var(--bs-tertiary-bg);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-
-  h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
