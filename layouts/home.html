@@ -6,42 +6,34 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/" role="button">Get Started</a>
+      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="{{ "docs/" | relURL }}" role="button">Get Started</a>
+    </div>
+  </div>
+</section>
+{{ if .Params.features }}
+<section class="section section-md container">
+  <div class="row justify-content-center text-center">
+    {{ range .Params.features }}
+    <div class="col-lg-5 col-xl-4 my-3">
+      <h4>{{ .title }}</h4>
+      <p>{{ .description }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ if or .Params.creditsText .Params.creditsDescription }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9 col-xl-8">
+      <div class="section-credits">
+        <p class="fw-bold mb-1">{{ .Params.creditsText }}</p>
+        <p class="text-muted">{{ .Params.creditsDescription }}</p>
+      </div>
     </div>
   </div>
 </section>
 {{ end }}
-
-{{ define "sidebar-prefooter" }}
-  {{ if site.Params.doks.backgroundDots -}}
-  <div class="d-flex justify-content-start">
-    <div class="bg-dots"></div>
-  </div>
-  {{ end -}}
-
-  <section class="section section-md section-features">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        {{ range .Params.features }}
-        <div class="col-lg-5">
-          <h2 class="h4">{{ .title }}</h2>
-          <p>{{ .description }}</p>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-credits container">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-6">
-        <p class="text-muted"><small>{{ .Params.creditsText | default "A personal knowledge base for DevOps engineering." }}</small></p>
-        <p>{{ .Params.creditsDescription | default "Built with Hugo and the Doks theme." }}</p>
-        <a href="https://github.com/agpenton">View on GitHub</a>
-      </div>
-    </div>
-  </section>
 {{ end }}
-
-{{ define "sidebar-footer" }}
-{{ end }}
+{{ define "sidebar-prefooter" }}{{ end }}
+{{ define "sidebar-footer" }}{{ end }}
