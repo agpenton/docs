@@ -8,4 +8,5 @@ pre: "<b>1. </b>"
 
 # Topics
 
-This chapter is dedicated to enumerate the topics treat in this blog.
+This chapter is dedicated to enumerating the topics treated in this blog.
+Let's try if everything works.
