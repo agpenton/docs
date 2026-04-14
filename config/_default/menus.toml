@@ -9,9 +9,14 @@
   weight = 20
 
 [[main]]
+name = "IaC"
+url = "/docs/IaC/"
+weight = 30
+
+[[main]]
   name = "Topics"
   url = "/docs/topics/"
-  weight = 30
+  weight = 40
 
 [[social]]
   name = "GitHub"
