@@ -47,7 +47,7 @@ mainSections = ["docs"]
   bootstrapJavascript = false # false (default) or true
 
   # Nav
-  sectionNav = ["IaC", "devops", "topics"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+  sectionNav = ["IaC", "devops", "CI/CD", "topics"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
   toTopButton = false # false (default) or true
   breadcrumbTrail = false # false (default) or true
   headlineHash = true # true (default) or false
@@ -58,8 +58,10 @@ mainSections = ["docs"]
   showMissingLanguages = true # whether or not to show untranslated languages in the language menu; true (default) or false
 
   # Versioning
-  docsVersioning = false # false (default) or true
-  docsVersion = "1.0"
+  docsVersioning = true # false (default) or true
+  docsVersion = "1.2.3" # "1.2.3" (default) or <version name>
+  showVersionInNav = true # true (default) or false
+  versionMenu = "dropdown" # "dropdown" (default) or "list"
 
   # UX
   headerBar = false # true (default) or false
