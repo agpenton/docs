@@ -1,6 +1,6 @@
 # baseurl = "https://pages.gitlab.io/hugo/"
 # baseurl = "https://asdrubal.github.io/docs/"
-baseurl = "https://asdrubal.github.io/"
+baseurl = "/docs/"
 DefaultContentLanguage = "en"
 languageCode = "en-US"
 contentdir    = "content"
