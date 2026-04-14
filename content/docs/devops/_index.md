@@ -6,7 +6,7 @@ date: 2024-01-01T00:00:00+00:00
 lastmod: 2024-01-01T00:00:00+00:00
 draft: false
 weight: 10
-toc: false
+toc: true
 seo:
   title: ""
   description: ""

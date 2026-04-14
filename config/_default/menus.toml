@@ -1,16 +1,16 @@
 [[main]]
-  name = "Docs"
-  url = "/docs/"
-  weight = 10
-
-[[main]]
   name = "DevOps"
   url = "/docs/devops/"
-  weight = 20
+  weight = 10
 
 [[main]]
 name = "IaC"
 url = "/docs/IaC/"
+weight = 20
+
+[[main]]
+name = "CI/CD"
+url = "/ci-cd/"
 weight = 30
 
 [[main]]
