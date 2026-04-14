@@ -6,3 +6,6 @@ draft: false
 
 # Tools
 
+{{< callout context="tip" title="Tools" icon="outline/tools" >}}
+This section will give some DevOps articles and tools to use.
+{{< /callout >}}
