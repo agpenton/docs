@@ -13,5 +13,9 @@ seo:
   canonical: ""
   noindex: false
 ---
+---
+sidebar:
+collapsed: true
+---
 
 Welcome to my personal technical documentation. I'm a DevOps Engineer sharing experiences, insights, and knowledge about cloud computing, automation, CI/CD, infrastructure as code, and much more.
