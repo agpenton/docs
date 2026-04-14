@@ -20,8 +20,8 @@ mainSections = ["docs"]
   containerBreakpoint = "lg" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
 
   ## Button
-  navBarButton = false # false (default) or true
-  navBarButtonUrl = "/docs/devops/tools/"
+  navBarButton = true # false (default) or true
+  navBarButtonUrl = "/docs/"
   navBarButtonText = "Get started"
 
   # FlexSearch
@@ -63,7 +63,7 @@ mainSections = ["docs"]
   backgroundDots = true # true (default) or false
 
   # Homepage
-  sectionFooter = false # false (default) or true
+  sectionFooter = true # false (default) or true
 
   # Blog
   relatedPosts = false # false (default) or true
