@@ -4,7 +4,7 @@ description = "Personal technical blog and documentation for DevOps practices, t
 images = ["cover.png"]
 
 # mainSections
-mainSections = ["docs"]
+mainSections = ["devops", "topics"]
 
 [social]
   name = "GitHub"
@@ -24,7 +24,7 @@ mainSections = ["docs"]
 
   ## Button
   navBarButton = true # false (default) or true
-  navBarButtonUrl = "/docs/"
+  navBarButtonUrl = "/devops/"
   navBarButtonText = "Get started"
 
   # FlexSearch
@@ -47,7 +47,7 @@ mainSections = ["docs"]
   bootstrapJavascript = false # false (default) or true
 
   # Nav
-  sectionNav = ["docs"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+  sectionNav = ["devops", "topics"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
   toTopButton = false # false (default) or true
   breadcrumbTrail = false # false (default) or true
   headlineHash = true # true (default) or false

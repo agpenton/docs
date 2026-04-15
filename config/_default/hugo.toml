@@ -51,9 +51,6 @@ copyRight = "Copyright (c) 2024 Asdrubal Gonzalez Penton"
   category = "categories"
   tag = "tags"
 
-[permalinks]
-  docs = "/docs/:sections[1:]/:slug/"
-
 [minify.tdewolff.html]
   keepWhitespace = false
 

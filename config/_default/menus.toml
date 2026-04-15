@@ -1,11 +1,11 @@
 [[main]]
   name = "DevOps"
-  url = "/docs/devops/"
+  url = "/devops/"
   weight = 10
 
 [[main]]
   name = "Topics"
-  url = "/docs/topics/"
+  url = "/topics/"
   weight = 20
 
 [[social]]
