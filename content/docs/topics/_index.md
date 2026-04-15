@@ -7,6 +7,8 @@ lastmod: 2024-01-01T00:00:00+00:00
 draft: false
 weight: 20
 toc: false
+sidebar:
+  collapsed: false
 seo:
   title: ""
   description: ""
