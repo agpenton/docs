@@ -95,7 +95,7 @@ For a personal account, you need two things: a **Personal Access Token** and a *
 
 **Generate a Webhook Secret:**
 
-```bash
+```shell
 openssl rand -hex 32
 ```
 
@@ -130,7 +130,7 @@ For the PAT, use an organization member's token with `repo` scope, or — better
 
 Atlantis needs two sensitive values: the GitHub token and the webhook secret. Never hardcode these in manifests. We will create a Kubernetes Secret and reference it from the Helm values.
 
-```bash
+```shell
 kubectl create namespace atlantis
 
 kubectl create secret generic atlantis-secrets \
@@ -262,7 +262,7 @@ spec:
 
 ### Commit and Push
 
-```bash
+```shell
 git add clusters/my-cluster/atlantis/
 git commit -m "feat(atlantis): add HelmRepository and HelmRelease for Atlantis"
 git push
@@ -348,7 +348,7 @@ This tells Atlantis exactly which directories to treat as Terraform projects, wh
 
 Once the `HelmRelease` is reconciled and the pod is running, get the external address of the LoadBalancer:
 
-```bash
+```shell
 kubectl get svc atlantis -n atlantis
 # NAME       TYPE           CLUSTER-IP     EXTERNAL-IP                          PORT(S)
 # atlantis   LoadBalancer   10.100.x.x     abc123.elb.us-east-1.amazonaws.com   80:30xxx/TCP,443:30xxx/TCP
