@@ -7,15 +7,13 @@ lastmod: 2024-01-01T00:00:00+00:00
 draft: false
 weight: 10
 toc: true
+sidebar:
+  collapsed: true
 seo:
   title: ""
   description: ""
   canonical: ""
   noindex: false
----
----
-sidebar:
-collapsed: true
 ---
 
 This section covers DevOps tools, practices, and articles to help you navigate the modern DevOps landscape.
