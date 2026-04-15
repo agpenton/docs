@@ -4,29 +4,9 @@
   weight = 10
 
 [[main]]
-name = "IaC"
-url = "/docs/IaC/"
-weight = 20
-
-[[main]]
-name = "Virtualization"
-url = "/docs/virtualization/"
-weight = 30
-
-[[main]]
-name = "Monitoring"
-url = "/docs/monitoring/"
-weight = 40
-
-[[main]]
-name = "Programing"
-url = "/docs/programing/"
-weight = 50
-
-[[main]]
   name = "Topics"
   url = "/docs/topics/"
-  weight = 60
+  weight = 20
 
 [[social]]
   name = "GitHub"
