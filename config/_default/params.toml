@@ -58,10 +58,10 @@ mainSections = ["docs"]
   showMissingLanguages = true # whether or not to show untranslated languages in the language menu; true (default) or false
 
   # Versioning
-  docsVersioning = true # false (default) or true
+  docsVersioning = false # false (default) or true
   docsVersion = "1.2.3" # "1.2.3" (default) or <version name>
-  showVersionInNav = true # true (default) or false
-  versionMenu = "dropdown" # "dropdown" (default) or "list"
+#  showVersionInNav = true # true (default) or false
+#  versionMenu = "dropdown" # "dropdown" (default) or "list"
 
   # UX
   headerBar = false # true (default) or false
