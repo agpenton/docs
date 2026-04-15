@@ -9,14 +9,24 @@ url = "/docs/IaC/"
 weight = 20
 
 [[main]]
-name = "CI/CD"
-url = "/ci-cd/"
+name = "Virtualization"
+url = "/docs/virtualization/"
 weight = 30
+
+[[main]]
+name = "Monitoring"
+url = "/docs/monitoring/"
+weight = 40
+
+[[main]]
+name = "Programing"
+url = "/docs/programing/"
+weight = 50
 
 [[main]]
   name = "Topics"
   url = "/docs/topics/"
-  weight = 40
+  weight = 60
 
 [[social]]
   name = "GitHub"
