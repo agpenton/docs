@@ -1,5 +1,134 @@
 // Custom styles
 
+// ─── Code Block Styling (Night Owl palette, Expressive-Code-like) ─────────────
+
+// Container polish: rounded corners and remove default margin
+.highlight > .chroma {
+  border-radius: 0.5rem !important;
+  overflow: hidden;
+}
+
+.highlight > pre {
+  border-radius: 0.5rem;
+}
+
+// Light mode: subtle off-white background
+.chroma {
+  background-color: #f6f8fa !important;
+  border: 1px solid #d0d7de !important;
+  border-radius: 0.5rem;
+}
+
+// Dark mode: Night Owl background + token colors
+@include color-mode(dark) {
+  .chroma {
+    background-color: #011627 !important;
+    color: #d6deeb !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  .bg {
+    background-color: #011627 !important;
+  }
+
+  // Keywords → coral/red
+  .chroma .k,
+  .chroma .kd,
+  .chroma .kn,
+  .chroma .kr,
+  .chroma .kt {
+    color: #c792ea !important;
+  }
+  // Constants, builtins → cyan
+  .chroma .kc,
+  .chroma .kp,
+  .chroma .no,
+  .chroma .nv,
+  .chroma .nl {
+    color: #addb67 !important;
+  }
+  // Functions → yellow-green
+  .chroma .nf,
+  .chroma .fm {
+    color: #82aaff !important;
+  }
+  // Classes → orange
+  .chroma .nc {
+    color: #ffcb8b !important;
+  }
+  // Name/attr → light blue
+  .chroma .na,
+  .chroma .nd {
+    color: #7fdbca !important;
+  }
+  // Tags → red
+  .chroma .nt {
+    color: #ff5874 !important;
+  }
+  // Strings → yellow
+  .chroma .s,
+  .chroma .sa,
+  .chroma .sb,
+  .chroma .sc,
+  .chroma .sd,
+  .chroma .s1,
+  .chroma .s2,
+  .chroma .sh,
+  .chroma .si,
+  .chroma .sx,
+  .chroma .dl {
+    color: #ecc48d !important;
+  }
+  .chroma .se,
+  .chroma .sr,
+  .chroma .ss {
+    color: #addb67 !important;
+  }
+  // Numbers → orange
+  .chroma .m,
+  .chroma .mb,
+  .chroma .mf,
+  .chroma .mh,
+  .chroma .mi,
+  .chroma .il,
+  .chroma .mo {
+    color: #f78c6c !important;
+  }
+  // Comments → slate
+  .chroma .c,
+  .chroma .ch,
+  .chroma .cm,
+  .chroma .c1,
+  .chroma .cs,
+  .chroma .cp,
+  .chroma .cpf {
+    color: #637777 !important;
+    font-style: italic;
+  }
+  // Operators
+  .chroma .o,
+  .chroma .ow {
+    color: #c792ea !important;
+  }
+  // Line numbers
+  .chroma .ln,
+  .chroma .lnt {
+    color: #4b6479 !important;
+  }
+  // Generic prompt
+  .chroma .gp {
+    color: #7fdbca !important;
+  }
+  // Generic inserted/deleted
+  .chroma .gi {
+    color: #addb67 !important;
+    background-color: #0f5323 !important;
+  }
+  .chroma .gd {
+    color: #ef5350 !important;
+    background-color: #490202 !important;
+  }
+}
+
 // ─── Hero Section ────────────────────────────────────────────────────────────
 .section.mt-n3 {
   padding-bottom: 1rem;
