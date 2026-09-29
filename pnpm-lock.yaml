@@ -12,8 +12,8 @@ importers:
         specifier: ^3.12.0
         version: 3.41.1
       '@thulite/doks-core':
-        specifier: ^1.7.0
-        version: 1.9.3
+        specifier: ^1.9.4
+        version: 1.9.4
       '@thulite/images':
         specifier: ^3.3.0
         version: 3.3.4
@@ -31,7 +31,7 @@ importers:
         version: 2.6.5
     devDependencies:
       prettier:
-        specifier: ^3.8.3
+        specifier: ^3.3.3
         version: 3.8.3
       vite:
         specifier: ^8.0.0
@@ -695,16 +695,16 @@ packages:
   '@tabler/icons@3.41.1':
     resolution: {integrity: sha512-OaRnVbRmH2nHtFeg+RmMJ/7m2oBIF9XCJAUD5gQnMrpK9f05ydj8MZrAf3NZQqOXyxGN1UBL0D5IKLLEUfr74Q==}
 
-  '@thulite/bootstrap@1.2.3':
-    resolution: {integrity: sha512-230kXC1QwBESDP2ye7hlfVs6OHvLFKxlb9NJxjTLzMnE5cDGTjR3Tf+2PQftVERBmItpgXTL559ZE3zo6CKZSw==}
+  '@thulite/bootstrap@1.2.4':
+    resolution: {integrity: sha512-Mhkq3P3/s9zYJqI5v6Td3uaWscyZSeqVOXs2b5a+vuJn9R4ntAKwWE52kYdeuHC12xCFVL5uwnXjeH22b0SnAA==}
     engines: {node: '>=20.11.0'}
 
   '@thulite/core@1.5.9':
     resolution: {integrity: sha512-8L1/GALG1wL+GPm4H4JnMhp+XXyPslnClM9uNQz/hYU2R9kKSPm3ED46jU8r2yboc/DzL+1vTg9M3BPtGNEixg==}
     engines: {node: '>=20.11.0'}
 
-  '@thulite/doks-core@1.9.3':
-    resolution: {integrity: sha512-K4BssyW7LwA19fz628kkdWb9p+DMq1LawmkegNEHkXnz7kecO3lVldk/Yn5mm9Ib6tv32ECA61BQxefDD9XokQ==}
+  '@thulite/doks-core@1.9.4':
+    resolution: {integrity: sha512-64yBB1gCKJk05md2lKXwvAkRzpymmBDFI6YoMsNZorha7o4RY0cSQeDnE/fSD547zLHuo9MEuuH3QuLKiwJaXA==}
     engines: {node: '>=20.11.0'}
 
   '@thulite/images@3.3.4':
@@ -2289,7 +2289,7 @@ snapshots:
 
   '@tabler/icons@3.41.1': {}
 
-  '@thulite/bootstrap@1.2.3':
+  '@thulite/bootstrap@1.2.4':
     dependencies:
       '@popperjs/core': 2.11.8
       bootstrap: 5.3.8(@popperjs/core@2.11.8)
@@ -2313,9 +2313,9 @@ snapshots:
       - supports-color
       - tsx
 
-  '@thulite/doks-core@1.9.3':
+  '@thulite/doks-core@1.9.4':
     dependencies:
-      '@thulite/bootstrap': 1.2.3
+      '@thulite/bootstrap': 1.2.4
       basiclightbox: 5.0.4
       clipboard: 2.0.11
       flexsearch: 0.8.212
